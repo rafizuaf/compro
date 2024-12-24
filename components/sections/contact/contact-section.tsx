@@ -22,7 +22,7 @@ export function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           <Card className="p-6 text-center">
             <MapPin className="w-8 h-8 mx-auto mb-4 text-primary" />
             <h3 className="font-semibold mb-2">Visit Us</h3>
@@ -54,7 +54,7 @@ export function ContactSection() {
           </Card>
         </div>
 
-        <Card className="mt-12 p-8">
+        <Card className="mt-12 p-8 max-w-7xl mx-auto">
           <ContactForm />
         </Card>
       </div>

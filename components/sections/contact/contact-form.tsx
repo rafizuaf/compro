@@ -14,15 +14,15 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     toast({
       title: "Message sent!",
       description: "We'll get back to you as soon as possible.",
     });
-    
+
     setIsSubmitting(false);
   };
 

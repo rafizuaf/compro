@@ -21,8 +21,8 @@ export function TeamMember({ name, role, image, delay }: TeamMemberProps) {
       viewport={{ once: true }}
     >
       <Card className="overflow-hidden">
-        <CardContent className="p-4 text-center">
-          <Avatar className="w-24 h-24 mx-auto mb-4">
+        <CardContent className="p-4 text-center group">
+          <Avatar className="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-105">
             <AvatarImage src={image} alt={name} />
             <AvatarFallback>{name[0]}</AvatarFallback>
           </Avatar>
