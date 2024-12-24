@@ -56,7 +56,7 @@ export function Services() {
   };
 
   return (
-    <section className="py-24 bg-secondary/20">
+    <section className="py-24 bg-secondary/20" id="services">
       <div className="px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold mb-4">Our Services</h2>
@@ -74,9 +74,9 @@ export function Services() {
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="relative overflow-hidden group hover:shadow-lg transition-shadow">
+              <Card className="relative overflow-hidden hover:shadow-lg transition-transform duration-300 hover:scale-110">
                 <CardHeader className="text-center">
-                  <div className="mb-4 text-primary transition-transform duration-300 group-hover:scale-105">
+                  <div className="mb-4 text-primary transition-transform duration-300">
                     {service.icon}
                   </div>
                   <CardTitle className="mb-2">{service.title}</CardTitle>
