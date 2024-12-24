@@ -74,7 +74,7 @@ export function Services() {
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="relative overflow-hidden hover:shadow-lg transition-transform duration-300 hover:scale-110">
+              <Card className="relative overflow-hidden hover:shadow-lg transition-transform duration-300 hover:scale-105">
                 <CardHeader className="text-center">
                   <div className="mb-4 text-primary transition-transform duration-300">
                     {service.icon}
